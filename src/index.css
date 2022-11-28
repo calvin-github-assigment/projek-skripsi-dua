@@ -1,0 +1,72 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+/* Navbar */
+.navbar-nav li a{
+  font-size: 17px;
+}
+.navbar-brand{
+  letter-spacing: 3px;
+}
+
+/* Card */
+.card{
+  transition: all 0.5s ease;
+}
+.card:hover{
+  transform: scale(1.1);
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+}
+
+/* Product */
+.product img {
+  transition: all 0.5s ease;
+}
+.product img:hover{
+  transform: scale(1.1);
+}
+
+
+
+/* admin page */
+
+.adminPage {
+  
+  /* border: 1px solid red; */
+}
+
+.adminPage-tableWrapper {
+  display: flex;
+  /* justify-content: center; */
+
+  /* border: 1px solid blue; */
+}
+
+.adminPage-table {
+  margin: 25px;
+}
+
+.adminPage-table tbody tr:hover {
+  cursor: pointer;
+  /* ganti warna for tabel */
+  background-color: red;
+}
+
+.adminPage form {
+  display: flex;
+  flex-direction: column;
+}
+
+.adminPage form input {
+  margin-bottom: 25px;
+}

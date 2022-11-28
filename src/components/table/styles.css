@@ -1,0 +1,83 @@
+.atom-table {
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    overflow-x: hidden;
+}
+
+.atom-table .row:nth-child(odd) {
+    /* warna baris yang ganjil */
+    background-color: #DDDDDD;
+}
+.atom-table .row:nth-child(even) {
+    /* warna baris yang genap */
+    background-color: #BBBBBB;
+}
+
+.atom-table .row.title {
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    
+    /* warna judul tabel */
+    background-color: red;
+}
+.atom-table .row.title:hover {
+    cursor: default;
+
+    /* warna judul tabel pas mouse kse arah ke situ */
+    background-color: green;
+}
+
+.atom-table .row.title div {
+    font-family: OpenSans-semibold;
+    color: white;
+}
+
+.atom-table .row.title .textErrMsg {
+    color: white;
+    font-family: OpenSans-medium;
+}
+
+.atom-table .row {
+    display: flex;
+    border-top: 1px solid black;
+    border-left: 1px solid black;
+    border-right: 1px solid black;
+}
+.atom-table .row:last-child {
+    border-end-end-radius: 10px;
+    border-end-start-radius: 10px;
+    border-bottom: 1px solid black;
+}
+.atom-table .row:hover {
+    /* cursor: pointer; */
+
+    /* warna baris tabel pas mouse kse arah ke situ */
+    background-color: blue;
+}
+
+.atom-table .row.selected {
+    background-color: var(--primaryColor);
+}
+.atom-table .row.selected:hover {
+    background-color: var(--primaryColorHover);
+}
+
+.atom-table .row.empty {
+    background-color: red;
+    border-radius: 5px;
+    padding: 7.5px;
+    background-color: #DDDDDD;
+    cursor: default;
+    display: flex;
+    justify-content: center;
+}
+
+.atom-table .row div {
+    padding: 7.5px;
+    color: black;
+    border-right: 1px solid black;
+}
+.atom-table .row div:last-child {
+    border: 0;
+}
